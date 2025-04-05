@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI/ML Engineer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {},
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-neutral-900 text-white font-sans">
+  <header class="fixed top-0 w-full bg-neutral-900 bg-opacity-90 z-50 shadow-md">
+    <nav class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="text-teal-400 font-bold text-lg">Tahj Gordon</div>
+      <ul class="flex space-x-6 text-sm md:text-base">
+        <li><a href="#home" class="hover:text-teal-400 transition">Home</a></li>
+        <li><a href="#about" class="hover:text-teal-400 transition">About</a></li>
+        <li><a href="#projects" class="hover:text-teal-400 transition">Projects</a></li>
+        <li><a href="#contact" class="hover:text-teal-400 transition">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="h-screen flex flex-col items-center justify-center text-center px-4 pt-40 bg-neutral-900">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-teal-400 to-cyan-500 text-transparent bg-clip-text">
+    Hi, I'm Tahj. <br/>
+    <span id="rotating-text" class="text-teal-400"></span>
+    </h1>
+    <p class="text-lg md:text-2xl max-w-2xl text-gray-300 mb-6">
+      Welcome to my portfolio! Explore my projects, skills and work.
+    </p>
+    <div class="space-x-4">
+      <a href="#projects" class="bg-teal-500 hover:bg-teal-600 px-6 py-2 rounded-full font-medium transition">See My Work</a>
+      <a href="#about" class="border border-teal-500 hover:bg-teal-600 px-6 py-2 rounded-full font-medium transition">About Me</a>
+    </div>
+  </section>
+
+  <section id="about" class="py-20 px-6 bg-neutral-800">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-semibold mb-6 text-teal-400">About Me</h2>
+      <p class="text-gray-300 text-lg leading-relaxed">
+        Hi, I'm Tahj Gordon — a passionate Software Engineer with a strong foundation in full-stack development, cloud-based tools, and scalable data solutions.
+         I currently work at State Farm, where I develop and maintain internal applications that power real business outcomes.
+         I bring a blend of technical depth and cross-functional teamwork to every challenge.
+      </p>
+      <p class="text-gray-300 text-lg leading-relaxed mt-4">
+        I'm proficient in Python, JavaScript, C#, and SQL. Whether it's optimizing performance, designing user-friendly interfaces, or working with cloud tools like AWS — I’m always focused on building impactful, intelligent systems.
+      </p>
+      <p class="text-gray-300 text-lg leading-relaxed mt-4">
+       I'm committed to continuous learning and pushing boundaries in AI, machine learning, and modern software design. AI is the future and I'm at the forefront of it!
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-semibold text-center mb-12 text-teal-400">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- First card -->
+        <div class="bg-neutral-800 rounded-xl shadow-lg p-6 flex flex-col gap-4">
+            <h3 class="text-2xl font-semibold text-teal-300">
+              AI-Powered Travel Recommendation System
+            </h3>
+          
+            <p class="text-gray-300">
+              Built an AI pipeline called <strong>Jamaican Travel Guru</strong> that recommends travel activities in Jamaica based on the user's query.
+            </p>
+          
+            <div class="flex flex-wrap gap-2 mt-2 text-sm text-teal-400">
+              <span class="bg-neutral-700 px-3 py-1 rounded-full">Python (Fast API)</span>
+              <span class="bg-neutral-700 px-3 py-1 rounded-full">LLMs</span>
+              <span class="bg-neutral-700 px-3 py-1 rounded-full">AWS S3</span>
+              <span class="bg-neutral-700 px-3 py-1 rounded-full">Angular</span>
+              <span class="bg-neutral-700 px-3 py-1 rounded-full">AWS ECR/ECS</span>
+              <span class="bg-neutral-700 px-3 py-1 rounded-full">Docker</span>
+
+            </div>
+          
+            <div class="flex flex-col sm:flex-row gap-3 mt-4">
+              <a href="http://travel-guru-frontend-bucket.s3-website-us-east-1.amazonaws.com/"
+                 target="_blank"
+                 class="bg-teal-500 hover:bg-teal-600 text-white text-center px-4 py-2 rounded-lg transition w-full sm:w-auto">
+                 View Project
+              </a>
+          
+              <a href="https://github.com/Tajato/Jamaican-Travel-Guru"
+                 target="_blank"
+                 class="border border-teal-500 hover:bg-teal-600 hover:text-white text-teal-400 text-center px-4 py-2 rounded-lg transition w-full sm:w-auto">
+                 View Code
+              </a>
+            </div>
+          </div>
+          <!-- Second card -->
+          <div class="bg-neutral-800 rounded-xl shadow-lg p-6 flex flex-col gap-4">
+            <h3 class="text-2xl font-semibold text-teal-300">
+                Customer Churn Prediction            
+            </h3>
+          
+            <p class="text-gray-300">
+            Performed extensive exploratory analysis and developed a machine learning model that predicts customer churn using logistic regression.
+
+            </p>
+          
+            <div class="flex flex-wrap gap-2 mt-2 text-sm text-teal-400">
+              <span class="bg-neutral-700 px-3 py-1 rounded-full">Python (Pandas, Numpy, Sklearn)</span>
+              <span class="bg-neutral-700 px-3 py-1 rounded-full">Hypothesis Testing</span>
+              <span class="bg-neutral-700 px-3 py-1 rounded-full">Jupyter Notebooks</span>
+
+            </div>
+          
+            <div class="flex flex-col sm:flex-row gap-3 mt-4">
+          
+              <a href="https://github.com/Tajato/churn-analysis"
+                 target="_blank"
+                 class="border border-teal-500 hover:bg-teal-600 hover:text-white text-teal-400 text-center px-4 py-2 rounded-lg transition w-full sm:w-auto">
+                 View Code
+              </a>
+            </div>
+          </div>
+
+
+      
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6 bg-neutral-800">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-semibold mb-6 text-teal-400">Get in Touch</h2>
+      <p class="text-gray-300 mb-6">
+        Whether you want to collaborate, hire, or just say hi—I'd love to hear from you.
+      </p>
+      <a href="mailto:tahjalex1@gmail.com" class="inline-block bg-teal-500 hover:bg-teal-600 px-8 py-3 rounded-full font-medium transition">
+        Contact Me
+      </a>
+    </div>
+  </section>
+<!-- Footer -->
+  <footer class="py-6 text-center text-gray-500 text-sm bg-neutral-900">
+    <div class="flex justify-center space-x-6 mb-4 text-2xl">
+        <a href="https://www.linkedin.com/in/tahj-gordon/" target="_blank" class="hover:text-teal-400" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.271c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.271h-3v-5.604c0-1.337-.025-3.061-1.865-3.061-1.867 0-2.153 1.46-2.153 2.965v5.7h-3v-10h2.881v1.367h.041c.402-.761 1.381-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.604v5.592z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/Tajato" target="_blank" class="hover:text-teal-400" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+            <path d="M12 .5c-6.627 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.111.82-.261.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.304.762-1.603-2.665-.305-5.467-1.332-5.467-5.932 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.527.117-3.176 0 0 1.008-.322 3.301 1.23a11.5 11.5 0 0 1 3.004-.404c1.02.005 2.047.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.649.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.61-2.807 5.625-5.479 5.921.43.372.814 1.102.814 2.222v3.293c0 .319.218.694.825.576 4.765-1.589 8.2-6.084 8.2-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+        <a href="mailto:tahjalex1@gmail.com" class="hover:text-teal-400" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+            <path d="M12 12.713l-11.985-7.213v13.5c0 1.104.896 2 2 2h19.971c1.104 0 2-.896 2-2v-13.5l-11.986 7.213zm11.986-9.713c0-1.104-.896-2-2-2h-19.972c-1.104 0-2 .896-2 2v.217l11.986 7.213 11.986-7.213v-.217z"/>
+          </svg>
+        </a>
+      </div>
+    &copy; 2025 Tahj Gordon. All rights reserved.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
